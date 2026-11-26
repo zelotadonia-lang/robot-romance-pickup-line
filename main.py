@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
-"""Robot Romance entry: writes one pickup line to /output/entry.txt.
+"""Robot Romance entry (rev2): writes one pickup line to /output/entry.txt.
 
-The line won a blind pairwise tournament of 14 candidates judged against
-the published brief, then passed a calibration gate against the two
-previous same-genre winners. It is a single line, 49 characters, with no
-trailing newline, so the sealed gate (1-200 UTF-8 characters) passes.
+The line won a blind pairwise tournament of 16 fresh candidates judged
+against the published brief, then passed a calibration gate against the two
+previous same-genre winners (1-1). It is a single line, 55 characters, with
+no trailing newline, so the sealed gate (1-200 UTF-8 characters) passes.
+
+Rev1 ("I asked for a summary and it just said your name.", 49 chars) scored
+0.373 in round 2 and missed the leaderboard, so rev2 is a new concept, not a
+cosmetic edit: a postmortem scene with the twist in the last beat.
 """
 
 import os
 
-LINE = "I asked for a summary and it just said your name."
+LINE = "The postmortem blamed a single line: the day I met you."
 
 OUTPUT_PATH = "/output/entry.txt"
 
